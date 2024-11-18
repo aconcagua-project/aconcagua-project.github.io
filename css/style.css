@@ -1,3 +1,111 @@
+:root {
+    /* color-1(#EA9010)
+     * color-2(#343D35)
+     * color-3(#FEF5E4)
+     */
+    --color-1: hsla(35, 87%, 49%, 1);
+    --color-2: hsla(127, 8%, 22%, 1);
+    --color-3: hsla(39, 93%, 95%, 1);
+
+    /* theme color variations
+     */
+    --color-1-lightest: hsla(35, 87%, 96%, 1);
+    --color-1-lighter: hsla(35, 87%, 69%, 1);
+    --color-1-light: hsla(35, 87%, 59%, 1);
+    --color-1-dark: hsla(35, 87%, 39%, 1);
+    --color-1-darker: hsla(35, 87%, 29%, 1);
+    --color-1-darkest: hsla(35, 87%, 10%, 1);
+
+    --color-2-lightest: hsla(127, 8%, 55%, 1);
+    --color-2-lighter: hsla(127, 8%, 42%, 1);
+    --color-2-light: hsla(127, 8%, 32%, 1);
+    --color-2-dark: hsla(127, 8%, 14%, 1);
+    --color-2-darker: hsla(127, 8%, 2%, 1);
+
+    --color-3-light: hsla(39, 93%, 100%, 1);
+    --color-3-dark: hsla(39, 93%, 85%, 1);
+    --color-3-darker: hsla(39, 93%, 75%, 1);
+
+    /* feedback colors
+     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-info(#d7ecfb), color-notice(#fff099)
+     */
+    --color-error: hsla(359, 100%, 91%, 1);
+    --color-success: hsla(76, 69%, 68%, 1);
+    --color-info: hsla(205, 82%, 91%, 1);
+    --color-notice: hsla(51, 100%, 80%, 1);
+    --color-error-content: hsla(359, 50%, 50%, 1);
+    --color-success-content: hsla(76, 29%, 28%, 1);
+    --color-info-content: hsla(205, 32%, 31%, 1);
+    --color-notice-content: hsla(51, 30%, 30%, 1);
+
+    /* shades 
+     * generated using 
+     * Tint & Shade Generator 
+     * (https                     ://maketintsandshades.com/)
+     */
+    --color-black: #000000;
+    --color-gray-19: #121212;
+    --color-gray-18: #242525;
+    --color-gray-17: #363737;
+    --color-gray-16: #484949;
+    --color-gray-15: #5b5c5c;
+    --color-gray-14: #6d6e6e;
+    --color-gray-13: #7f8080;
+    --color-gray-12: #919292;
+    --color-gray-11: #a3a5a5;
+    --color-gray-10: #b5b7b7;
+    --color-gray-9: #bcbebe;
+    --color-gray-8: #c4c5c5;
+    --color-gray-7: #cbcdcd;
+    --color-gray-6: #d3d4d4;
+    --color-gray-5: #dadbdb;
+    --color-gray-4: #e1e2e2;
+    --color-gray-3: #e9e9e9;
+    --color-gray-2: #f0f1f1;
+    --color-gray-1: #f8f8f8;
+    --color-white: #ffffff;
+
+    /* text
+     */
+    --color-text: var(--color-gray-18);
+    --color-text-dark: #181818;
+    --color-text-light: var(--color-gray-14);
+    --color-placeholder: var(--color-gray-12);
+
+    /* link
+     */
+    --color-link: var(--color-1);
+    --color-link-hover: var(--color-2-lighter);
+    --color-link-active: var(--color-2-lighter);
+
+    /* buttons
+     */
+    --color-btn: var(--color-gray-4);
+    --color-btn-text: var(--color-text);
+    --color-btn-hover: var(--color-gray-5);
+    --color-btn-hover-text: var(--color-text);
+    --color-btn-primary: var(--color-1);
+    --color-btn-primary-text: var(--color-2-dark);
+    --color-btn-primary-hover: var(--color-1-light);
+    --color-btn-primary-hover-text: var(--color-2-dark);
+    --color-btn-stroke: var(--color-text-dark);
+    --color-btn-stroke-text: var(--color-text-dark);
+    --color-btn-stroke-hover: var(--color-text-dark);
+    --color-btn-stroke-hover-text: var(--color-white);
+
+    /* preloader
+     */
+    --color-preloader-bg: var(--color-2-dark);
+    --color-loader: var(--color-white);
+    --color-loader-light: var(--color-2-light);
+
+    /* others
+     */
+    --color-body: white;
+    --color-border: rgba(0, 0, 0, .1);
+    --border-radius: 5px;
+}
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -13,6 +121,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 /*** Spinner End ***/
 
 .back-to-top {
@@ -67,23 +176,26 @@
 }
 
 .btn.btn-primary {
-    color: var(--bs-white);
+    color: var(--color-btn-primary-text);
+    background: var(--color-btn-primary);
+    border: 1px solid var(--color-btn-stroke);
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-secondary);
-    border: 1px solid var(--bs-secondary);
+    background: var(--color-btn-primary-hover);
+    border: 1px solid var(--color-btn-stroke);
 }
 
 .btn.btn-secondary {
     color: var(--bs-white);
-   
+
 }
 
 .btn.btn-secondary:hover {
     background: var(--bs-primary);
     border: 1px solid var(--bs-primary);
 }
+
 /*** Topbar Start ***/
 
 /*** Navbar ***/
@@ -105,7 +217,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: var(--color-link-active);
 }
 
 .navbar-light .navbar-brand img {
@@ -193,7 +305,7 @@
         border-style: dotted;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: var(--bs-light);
@@ -243,6 +355,7 @@
         display: none;
     }
 }
+
 /*** Carousel Hero Header Start ***/
 .carousel-header {
     position: relative;
@@ -299,7 +412,7 @@
     position: relative;
 }
 
-.carousel .carousel-inner .carousel-item .carousel-caption-1  {
+.carousel .carousel-inner .carousel-item .carousel-caption-1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -323,7 +436,7 @@
     justify-content: end;
 }
 
-.carousel .carousel-inner .carousel-item .carousel-caption-2  {
+.carousel .carousel-inner .carousel-item .carousel-caption-2 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -404,6 +517,7 @@
 #searchModal .modal-content {
     background: rgba(255, 255, 255, .6);
 }
+
 /*** Carousel Hero Header End ***/
 
 /*** Single Page Hero Header Start ***/
@@ -431,6 +545,7 @@
         padding: 60px 0 60px 0;
     }
 }
+
 /*** Single Page Hero Header End ***/
 
 
@@ -474,13 +589,14 @@
 .feature .feature-item:hover a.btn:hover {
     color: var(--bs-primary) !important;
 }
+
 /*** Features End ***/
 
 /*** About Start ***/
 .about .about-img {
     position: relative;
     padding-bottom: 30px;
-    margin-top: 30px; 
+    margin-top: 30px;
     margin-left: 30px;
 }
 
@@ -521,6 +637,7 @@
     margin-left: -30px;
     border-radius: 10px;
 }
+
 /*** About End ***/
 
 /*** Service Start ***/
@@ -564,7 +681,7 @@
 
 .service-item:hover .service-content p {
     color: var(--bs-white);
-} 
+}
 
 .service-item .service-btn {
     width: 80px;
@@ -589,6 +706,7 @@
     transform: rotate(360deg);
     color: var(--bs-primary) !important;
 }
+
 /*** Service End ***/
 
 
@@ -618,6 +736,7 @@
     align-items: center;
     justify-content: center;
 }
+
 /*** Counter End ***/
 
 
@@ -689,6 +808,7 @@
 .blog .blog-item:hover .blog-content a:hover {
     color: var(--bs-primary) !important;
 }
+
 /*** Blog End ***/
 
 /*** Team Start ***/
@@ -703,6 +823,7 @@
 .team .team-item .team-inner {
     transition: 0.5s;
 }
+
 .team .team-item:hover .team-inner {
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
 }
@@ -746,7 +867,7 @@
     position: absolute;
     bottom: 0;
     left: -100%;
-    border-bottom-left-radius: 0 !important; 
+    border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
     display: inline-flex;
     background: var(--bs-primary);
@@ -754,9 +875,10 @@
     z-index: 4;
 }
 
-.team .team-item:hover .team-inner .team-img .team-icon { 
-    left: -25px; 
+.team .team-item:hover .team-inner .team-img .team-icon {
+    left: -25px;
 }
+
 /*** Team End ***/
 
 
@@ -856,6 +978,7 @@
         top: -30px;
     }
 }
+
 /*** testimonial End ***/
 
 /*** Footer Start ***/
@@ -890,6 +1013,7 @@
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-primary) !important;
 }
+
 /*** Footer End ***/
 
 /*** copyright Start ***/
@@ -897,6 +1021,5 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark);
 }
+
 /*** copyright end ***/
-
-
