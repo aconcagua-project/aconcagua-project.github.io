@@ -28,20 +28,23 @@
     --bs-dark: #001442;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
-        /* color-1(#EA9010)
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    /* color-1(#EA9010)
      * color-2(#343D35)
      * color-3(#FEF5E4)
      */
-        --color-1: hsla(35, 87%, 49%, 1);
-    --color-2: hsla(127, 8%, 22%, 1);
+
+    
+    /* --color-1: hsla(35, 87%, 49%, 1); */
+    --color-2: #111c3d;
     --color-3: hsla(39, 93%, 95%, 1);
+    --color-1: #16a9ff;
 
     /* theme color variations
       */
-    --color-1-lightest: hsla(35, 87%, 96%, 1);
-    --color-1-lighter: hsla(35, 87%, 69%, 1);
-    --color-1-light: hsla(35, 87%, 59%, 1);
+    --color-1-lightest: #8dd2fa;
+    --color-1-lighter: #68c0f3;
+    --color-1-light: #40b9ff;
     --color-1-dark: hsla(35, 87%, 39%, 1);
     --color-1-darker: hsla(35, 87%, 29%, 1);
     --color-1-darkest: hsla(35, 87%, 10%, 1);
@@ -106,8 +109,8 @@
     /* link
       */
     --color-link: var(--color-1);
-    --color-link-hover: var(--color-2-lighter);
-    --color-link-active: var(--color-2-lighter);
+    --color-link-hover: var(--color-1-lightest);
+    --color-link-active: var(--color-1-lightest);
 
     /* buttons
       */
@@ -185,7 +188,7 @@ h1,
 .h1 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Playfair Display", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.2;
     color: var(--color-2)
@@ -342,7 +345,7 @@ a {
 }
 
 a:hover {
-    color: #00a7c7
+    color: var(--color-1-lighter)
 }
 
 a:not([href]):not([class]),
