@@ -15,8 +15,8 @@
      --color-1-lightest: #8dd2fa;
     --color-1-lighter: #68c0f3;
     --color-1-light: #40b9ff;
-    --color-1-dark: hsla(35, 87%, 39%, 1);
-    --color-1-darker: hsla(35, 87%, 29%, 1);
+    --color-1-dark: #00cd67;
+    --color-1-darker: #c2edc4;
     --color-1-darkest: hsla(35, 87%, 10%, 1);
 
     --color-2-lightest: hsla(127, 8%, 55%, 1);
@@ -90,7 +90,7 @@
     --color-btn-hover-text: var(--color-text);
     --color-btn-primary: var(--color-1);
     --color-btn-primary-text: var(--color-2-dark);
-    --color-btn-primary-hover: var(--color-1-light);
+    --color-btn-primary-hover: var(--color-1-dark);
     --color-btn-primary-hover-text: var(--color-2-dark);
     --color-btn-stroke: var(--color-text-dark);
     --color-btn-stroke-text: var(--color-text-dark);
@@ -195,7 +195,7 @@
 
 .btn.btn-primary:hover {
     background: var(--color-btn-primary-hover);
-    border: 1px solid var(--color-btn-primary);
+    border: 1px solid var(--color-btn-primary-hover);
 }
 
 .btn.btn-secondary {
@@ -206,7 +206,7 @@
 
 .btn.btn-secondary:hover {
     color: var(--color-btn-hover-text);
-    background: var(--color-3-light);
+    background: var(--color-1-darker);
 }
 
 /*** Topbar Start ***/
@@ -230,7 +230,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--color-link-active);
+    color: var(--color-1);
 }
 
 .navbar-light .navbar-brand img {
@@ -587,12 +587,19 @@
     background: var(--color-1);
 }
 
-/* .feature .feature-item .feature-icon i {
+/* .feature .feature-item .feature-icon:hover {
+    background: var(--color-1-dark);
+    .feature .feature-item .feature-icon {
+        background: var(--color-1-dark);
+    }
+} */
+
+.feature .feature-item .feature-icon i {
     transition: 0.5s;
 }
 
-.feature .feature-item:hover .feature-icon i {
-    transform: rotate(360deg);
+/* .feature .feature-item:hover .feature-icon i {
+    background: var(--color-1-dark);
 } */
 
 .feature .feature-item a.btn {
@@ -689,10 +696,11 @@
 }
 
 .service-item:hover .service-content a:hover {
-    color: var(--color-2);
+    color: var(--bs-white);
 }
 
-.service-item:hover .service-content p {
+.service-item:hover .service-content p, 
+.service-item:hover .service-content a {
     color: var(--bs-white);
 }
 
@@ -707,6 +715,7 @@
     transition: 0.5s;
 }
 
+.service-item .service-btn,
 .service-item .service-btn i {
     transition: 0.5s;
 }
@@ -715,8 +724,9 @@
     background: var(--bs-white);
 }
 
+.service-item:hover .service-btn,
 .service-item:hover .service-btn i {
-    transform: rotate(360deg);
+    transform: scale(110%);
     color: var(--color-1) !important;
 }
 
