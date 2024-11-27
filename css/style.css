@@ -199,7 +199,7 @@
 }
 
 .btn.btn-secondary {
-    color: var(--color-btn-text);
+    color: var(--color-btn-text) !important;
     background: var(--color-3);
     border: 1px solid var(--color-3-light);
 }
@@ -807,7 +807,7 @@
 }
 
 .blog .blog-item:hover .blog-img img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .blog .blog-item:hover .blog-img::after {
@@ -865,7 +865,7 @@
     left: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: rgba(0, 209, 249, 0.2);
+    /* background: rgba(0, 209, 249, 0.2); */
     transition: 0.5s;
     z-index: 3;
 }
@@ -880,6 +880,7 @@
     bottom: 10px;
     transition: 0.5s;
     z-index: 2;
+    color: var(--color-2);
 }
 
 .team .team-item:hover .team-inner .team-img .team-share {
@@ -1011,7 +1012,7 @@
 
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--color-white);
     transition: 0.5s;
 }
 
@@ -1020,7 +1021,7 @@
 }
 
 .footer .footer-item a:hover {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: var(--color-1);
 }
 
