@@ -1,4 +1,41 @@
 :root {
+
+    /* Color Theme Swatches in Hex */
+    --aconcagua-color-1:  #0e3158; 
+    --aconcagua-color-2:  #1E439B; 
+    --aconcagua-color-3:  #6588D9; 
+    --aconcagua-color-4:  #95B3D5; 
+    --aconcagua-color-5:  #1A373D; 
+    --aconcagua-color-6:  #467B75; 
+    --aconcagua-color-7:  #9fc7c2;
+    --aconcagua-color-8:  #79534A; 
+    --aconcagua-color-9:  #BA948B; 
+    --aconcagua-color-10:  #F1F3F2; 
+
+    /* Color Theme Swatches in RGBA */
+    /* .Aconcagua-Custom-1-1-rgba { color: rgba(6, 33, 63, 1); }
+    .Aconcagua-Custom-1-2-rgba { color: rgba(30, 67, 155, 1); }
+    .Aconcagua-Custom-1-3-rgba { color: rgba(101, 136, 217, 1); }
+    .Aconcagua-Custom-1-4-rgba { color: rgba(149, 179, 213, 1); }
+    .Aconcagua-Custom-1-5-rgba { color: rgba(26, 55, 61, 1); }
+    .Aconcagua-Custom-1-6-rgba { color: rgba(70, 123, 117, 1); }
+    .Aconcagua-Custom-1-7-rgba { color: rgba(126, 150, 154, 1); }
+    .Aconcagua-Custom-1-8-rgba { color: rgba(121, 83, 74, 1); }
+    .Aconcagua-Custom-1-9-rgba { color: rgba(186, 148, 139, 1); }
+    .Aconcagua-Custom-1-10-rgba { color: rgba(241, 243, 242, 1); } */
+
+    /* Color Theme Swatches in HSLA */
+    /* .Aconcagua-Custom-1-1-hsla { color: hsla(211, 82, 13, 1); }
+    .Aconcagua-Custom-1-2-hsla { color: hsla(222, 67, 36, 1); }
+    .Aconcagua-Custom-1-3-hsla { color: hsla(221, 60, 62, 1); }
+    .Aconcagua-Custom-1-4-hsla { color: hsla(211, 43, 70, 1); }
+    .Aconcagua-Custom-1-5-hsla { color: hsla(190, 40, 17, 1); }
+    .Aconcagua-Custom-1-6-hsla { color: hsla(173, 27, 37, 1); }
+    .Aconcagua-Custom-1-7-hsla { color: hsla(188, 12, 54, 1); }
+    .Aconcagua-Custom-1-8-hsla { color: hsla(11, 24, 38, 1); }
+    .Aconcagua-Custom-1-9-hsla { color: hsla(11, 25, 63, 1); }
+    .Aconcagua-Custom-1-10-hsla { color: hsla(150, 7, 94, 1); } */
+    
     /* color-1(#EA9010)
      * color-2(#343D35)
      * color-3(#FEF5E4)
@@ -78,19 +115,19 @@
 
     /* link
      */
-    --color-link: var(--color-1);
-    --color-link-hover: var(--color-1-light);
+    --color-link: var(--aconcagua-color-3);
+    --color-link-hover: var(--aconcagua-color-6);
     --color-link-active: var(--color-white);
 
     /* buttons
      */
-    --color-btn: var(--color-gray-4);
+    --color-btn: var(--aconcagua-color-4);
     --color-btn-text: var(--color-text);
-    --color-btn-hover: var(--color-gray-5);
+    --color-btn-hover: var(--aconcagua-color-10);
     --color-btn-hover-text: var(--color-text);
-    --color-btn-primary: var(--color-1);
+    --color-btn-primary: var(--aconcagua-color-6);
     --color-btn-primary-text: var(--color-2-dark);
-    --color-btn-primary-hover: var(--color-1-dark);
+    --color-btn-primary-hover: var(--aconcagua-color-5);
     --color-btn-primary-hover-text: var(--color-2-dark);
     --color-btn-stroke: var(--color-text-dark);
     --color-btn-stroke-text: var(--color-text-dark);
@@ -111,11 +148,11 @@
 }
 
 .light-1 {
-    color: var(--color-1);
+    color: var(--aconcagua-color-3);
 }
 
 .light-2 {
-    color: var(--color-3);
+    color: var(--aconcagua-color-10);
 }
 
 
@@ -200,13 +237,13 @@
 
 .btn.btn-secondary {
     color: var(--color-btn-text) !important;
-    background: var(--color-3);
-    border: 1px solid var(--color-3-light);
+    background: var(--aconcagua-color-10);
+    border: 1px solid var(--aconcagua-color-10);
 }
 
 .btn.btn-secondary:hover {
     color: var(--color-btn-hover-text);
-    background: var(--color-1-darker);
+    background: var(--aconcagua-color-7);
 }
 
 /*** Topbar Start ***/
@@ -225,12 +262,12 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--color-2);
+    color: var(--aconcagua-color-1);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--color-1);
+    color: var(--aconcagua-color-3);
 }
 
 .navbar-light .navbar-brand img {
@@ -252,14 +289,14 @@
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--color-3);
+    background: var(--aconcagua-color-10);
     transition: .5s;
     opacity: 1;
 }
@@ -272,8 +309,8 @@
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--color-1);
-        color: var(--color-1);
+        border: 1px solid var(--aconcagua-color-3);
+        color: var(--aconcagua-color-3);
     }
 
     .navbar-light .navbar-collapse {
@@ -285,7 +322,7 @@
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--color-2);
+        color: var(--aconcagua-color-1);
     }
 
     .navbar-light .navbar-brand img {
@@ -332,7 +369,7 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--color-1);
+        background: var(--aconcagua-color-3);
         transition: .5s;
     }
 
@@ -347,7 +384,7 @@
         left: 50%;
         transform: translateX(-50%);
         border: 10px solid;
-        border-color: transparent transparent var(--color-1) transparent;
+        border-color: transparent transparent var(--aconcagua-color-3) transparent;
         opacity: 0;
         transition: 0.5s;
     }
@@ -393,7 +430,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     transition: 0.5s;
 }
 
@@ -418,7 +455,7 @@
 
 .carousel .carousel-control-prev .carousel-control-prev-icon:hover,
 .carousel .carousel-control-next .carousel-control-next-icon:hover {
-    background: var(--color-2);
+    background: var(--aconcagua-color-1);
 }
 
 .carousel .carousel-inner .carousel-item {
@@ -584,13 +621,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-1);
+    background: var(--aconcagua-color-6);
 }
 
 /* .feature .feature-item .feature-icon:hover {
-    background: var(--color-1-dark);
+    background: var(--aconcagua-color-5);
     .feature .feature-item .feature-icon {
-        background: var(--color-1-dark);
+        background: var(--aconcagua-color-5);
     }
 } */
 
@@ -599,7 +636,7 @@
 }
 
 /* .feature .feature-item:hover .feature-icon i {
-    background: var(--color-1-dark);
+    background: var(--aconcagua-color-5);
 } */
 
 .feature .feature-item a.btn {
@@ -607,7 +644,7 @@
 }
 
 .feature .feature-item:hover a.btn:hover {
-    color: var(--color-1) !important;
+    color: var(--aconcagua-color-3) !important;
 }
 
 /*** Features End ***/
@@ -628,7 +665,7 @@
     top: -30px;
     right: 0;
     border-radius: 10px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
 
 }
 
@@ -640,7 +677,7 @@
     left: -30px;
     bottom: 30px;
     border-radius: 10px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
 }
 
 .about .about-img .about-exp {
@@ -650,9 +687,9 @@
     padding: 25px;
     font-size: 30px;
     font-weight: bold;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
-    border: 1px solid var(--color-1);
+    border: 1px solid var(--aconcagua-color-3);
     margin-top: -30px;
     margin-left: -30px;
     border-radius: 10px;
@@ -674,7 +711,7 @@
     left: 0;
     bottom: 0;
     border-radius: 10px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     transition: 0.5s;
     z-index: 1;
 }
@@ -711,7 +748,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     transition: 0.5s;
 }
 
@@ -727,7 +764,7 @@
 .service-item:hover .service-btn,
 .service-item:hover .service-btn i {
     transform: scale(110%);
-    color: var(--color-1) !important;
+    color: var(--aconcagua-color-3) !important;
 }
 
 /*** Service End ***/
@@ -754,7 +791,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -774,7 +811,7 @@
 /*** Blog Start ***/
 .blog .blog-item {
     border-radius: 10px;
-    background: var(--color-3);
+    background: var(--aconcagua-color-10);
     transition: 0.5s;
 }
 
@@ -819,7 +856,7 @@
     top: 25px;
     left: 25px;
     border-radius: 10px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
     z-index: 2;
 }
@@ -829,7 +866,7 @@
 }
 
 .blog .blog-item:hover .blog-content a:hover {
-    color: var(--color-1) !important;
+    color: var(--aconcagua-color-3) !important;
 }
 
 /*** Blog End ***/
@@ -839,7 +876,7 @@
     position: relative;
     overflow: hidden;
     background: var(--bs-white);
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--aconcagua-color-1);
     border-radius: 10px;
 }
 
@@ -880,7 +917,7 @@
     bottom: 10px;
     transition: 0.5s;
     z-index: 2;
-    color: var(--color-2);
+    color: var(--aconcagua-color-1);
 }
 
 .team .team-item:hover .team-inner .team-img .team-share {
@@ -894,7 +931,7 @@
     border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
     display: inline-flex;
-    background: var(--color-1);
+    background: var(--aconcagua-color-6);
     transition: 0.5s;
     z-index: 4;
 }
@@ -911,7 +948,7 @@
     position: absolute;
     top: -58px;
     right: 0;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
     padding: 5px 30px;
     border-radius: 30px;
@@ -919,7 +956,7 @@
 }
 
 .testimonial .owl-nav .owl-prev:hover {
-    background: var(--color-2);
+    background: var(--aconcagua-color-1);
     color: var(--bs-white);
 }
 
@@ -927,7 +964,7 @@
     position: absolute;
     top: -58px;
     right: 88px;
-    background: var(--color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
     padding: 5px 30px;
     border-radius: 30px;
@@ -935,7 +972,7 @@
 }
 
 .testimonial .owl-nav .owl-next:hover {
-    background: var(--color-2);
+    background: var(--aconcagua-color-1);
     color: var(--bs-white);
 }
 
@@ -951,8 +988,8 @@
     height: 20px;
     border-radius: 20px;
     margin-right: 15px;
-    border: 1px solid var(--color-2);
-    background: var(--color-1);
+    border: 1px solid var(--aconcagua-color-1);
+    background: var(--aconcagua-color-3);
     transition: 0.5s;
 }
 
@@ -960,8 +997,8 @@
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    border: 1px solid var(--color-1);
-    background: var(--color-2) !important;
+    border: 1px solid var(--aconcagua-color-3);
+    background: var(--aconcagua-color-1) !important;
     transition: 0.5s;
 }
 
@@ -1007,7 +1044,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--color-2);
+    background: var(--aconcagua-color-1);
 }
 
 .footer .footer-item a {
@@ -1022,7 +1059,7 @@
 
 .footer .footer-item a:hover {
     letter-spacing: 0.5px;
-    color: var(--color-1);
+    color: var(--aconcagua-color-3);
 }
 
 .footer .footer-item .footer-btn a,
@@ -1035,7 +1072,7 @@
 }
 
 .footer .footer-item .footer-btn a:hover i {
-    color: var(--color-1) !important;
+    color: var(--aconcagua-color-3) !important;
 }
 
 /*** Footer End ***/
@@ -1043,11 +1080,20 @@
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--color-2);
+    background: var(--aconcagua-color-1);
 }
 
 /*** copyright end ***/
 
 .bold {
     font-weight: 700;
+}
+
+.green{
+    margin-top: 0px;
+    color: var(--aconcagua-color-6);
+}
+
+.blue {
+    color: var(--aconcagua-color-3);
 }

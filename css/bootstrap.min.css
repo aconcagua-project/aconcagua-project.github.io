@@ -18,7 +18,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: var(--color-1);
+    --bs-primary: var(--aconcagua-color-1);
     --bs-secondary: #19409A;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -33,6 +33,18 @@
      * color-2(#343D35)
      * color-3(#FEF5E4)
      */
+
+        /* Color Theme Swatches in Hex */
+        --aconcagua-color-1:  #0e3158; 
+        --aconcagua-color-2:  #112658; 
+        --aconcagua-color-3:  #6588D9; 
+        --aconcagua-color-4:  #95B3D5; 
+        --aconcagua-color-5:  #1A373D; 
+        --aconcagua-color-6:  #467B75; 
+        --aconcagua-color-7:  #7E969A; 
+        --aconcagua-color-8:  #79534A; 
+        --aconcagua-color-9:  #BA948B; 
+        --aconcagua-color-10:  #F1F3F2; 
 
     
     /* --color-1: hsla(35, 87%, 49%, 1); */
@@ -108,7 +120,7 @@
 
     /* link
       */
-    --color-link: var(--color-1);
+    --color-link: var(--aconcagua-color-1);
     --color-link-hover: var(--color-1-lightest);
     --color-link-active: var(--color-1-lightest);
 
@@ -118,9 +130,9 @@
     --color-btn-text: var(--color-text);
     --color-btn-hover: var(--color-gray-5);
     --color-btn-hover-text: var(--color-text);
-    --color-btn-primary: var(--color-1);
+    --color-btn-primary: var(--aconcagua-color-1);
     --color-btn-primary-text: var(--color-2-dark);
-    --color-btn-primary-hover: var(--color-1-light);
+    --color-btn-primary-hover: var(--aconcagua-color-6);
     --color-btn-primary-hover-text: var(--color-2-dark);
     --color-btn-stroke: var(--color-text-dark);
     --color-btn-stroke-text: var(--color-text-dark);
@@ -191,7 +203,7 @@ h1,
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--color-2)
+    color: var(--aconcagua-color-6)
 }
 
 
@@ -340,7 +352,7 @@ sup {
 }
 
 a {
-    color: var(--color-1);
+    color: var(--aconcagua-color-4);
     text-decoration: none
 }
 
@@ -2624,8 +2636,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -2637,8 +2649,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type=checkbox]:indeterminate {
-    background-color: var(--color-1);
-    border-color: var(--color-1);
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
@@ -2727,7 +2739,7 @@ textarea.form-control-lg {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: var(--color-1);
+    background-color: var(--aconcagua-color-1);
     border: 0;
     border-radius: 1rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -2757,7 +2769,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: var(--color-1);
+    background-color: var(--aconcagua-color-1);
     border: 0;
     border-radius: 1rem;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -3189,8 +3201,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .btn-primary:hover {
@@ -3228,8 +3240,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #000;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .btn-secondary {
@@ -3548,14 +3560,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-    color: var(--color-1);
-    border-color: var(--color-1)
+    color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .btn-outline-primary:hover {
     color: #000;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .btn-check:focus+.btn-outline-primary,
@@ -3569,8 +3581,8 @@ fieldset:disabled .btn {
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show {
     color: #000;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .btn-check:checked+.btn-outline-primary:focus,
@@ -3583,7 +3595,7 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:disabled,
 .btn-outline-primary.disabled {
-    color: var(--color-1);
+    color: var(--aconcagua-color-1);
     background-color: rgba(0, 0, 0, 0)
 }
 
@@ -3869,7 +3881,7 @@ fieldset:disabled .btn {
 
 .btn-link {
     font-weight: 400;
-    color: var(--color-1);
+    color: var(--aconcagua-color-1);
     text-decoration: none
 }
 
@@ -4245,7 +4257,7 @@ fieldset:disabled .btn {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: var(--color-1)
+    background-color: var(--aconcagua-color-1)
 }
 
 .dropdown-item.disabled,
@@ -4293,7 +4305,7 @@ fieldset:disabled .btn {
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
     color: #fff;
-    background-color: var(--color-1)
+    background-color: var(--aconcagua-color-1)
 }
 
 .dropdown-menu-dark .dropdown-item.disabled,
@@ -4435,7 +4447,7 @@ fieldset:disabled .btn {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: var(--color-1);
+    color: var(--aconcagua-color-1);
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
 }
 
@@ -4502,7 +4514,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: var(--color-1)
+    background-color: var(--aconcagua-color-1)
 }
 
 .nav-fill>.nav-link,
@@ -5255,7 +5267,7 @@ fieldset:disabled .btn {
 .page-link {
     position: relative;
     display: block;
-    color: var(--color-1);
+    color: var(--aconcagua-color-1);
     background-color: #fff;
     border: 1px solid #dee2e6;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
@@ -5289,8 +5301,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .page-item.disabled .page-link {
@@ -5497,7 +5509,7 @@ fieldset:disabled .btn {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: var(--color-1);
+    background-color: var(--aconcagua-color-1);
     transition: width .6s ease
 }
 
@@ -5588,8 +5600,8 @@ fieldset:disabled .btn {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: var(--color-1);
-    border-color: var(--color-1)
+    background-color: var(--aconcagua-color-1);
+    border-color: var(--aconcagua-color-1)
 }
 
 .list-group-item+.list-group-item {
@@ -6988,7 +7000,7 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-    color: var(--color-1)
+    color: var(--aconcagua-color-1)
 }
 
 .link-primary:hover,
@@ -7414,7 +7426,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: var(--color-1) !important
+    border-color: var(--aconcagua-color-1) !important
 }
 
 .border-secondary {
@@ -8391,11 +8403,11 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: var(--color-1) !important
+    color: var(--aconcagua-color-4) !important
 }
 
 .text-secondary {
-    color: var(--color-2) !important
+    color: var(--aconcagua-color-1) !important
 }
 
 .text-success {
@@ -8423,7 +8435,7 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: var(--color-3) !important
+    color: var(--aconcagua-color-10) !important
 }
 
 .text-body {
@@ -8447,7 +8459,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: var(--color-1) !important
+    background-color: var(--aconcagua-color-4) !important
 }
 
 .bg-secondary {
@@ -8471,7 +8483,7 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: var(--color-2) !important
+    background-color: var(--aconcagua-color-1) !important
 }
 
 .bg-dark {
