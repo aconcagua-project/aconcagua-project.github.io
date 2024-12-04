@@ -10,20 +10,38 @@
         }, 1);
     };
     spinner(0);
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
+    const waterCircle = document.querySelector('#water_circle');
+    const fill = document.querySelector('#water_circle .fill');
+    const wave = document.querySelector('#water_circle #waveShape');
+
+    waterCircle.addEventListener('mouseenter', () => {
+        // Play animations forward
+        fill.style.animationDirection = 'normal';
+        fill.style.animationPlayState = 'running';
+        wave.style.animationPlayState = 'running';
+    });
+
+    waterCircle.addEventListener('mouseleave', () => {
+        // Stop animations and reset state
+        // fill.style.animationPlayState = 'paused';
+        // wave.style.animationPlayState = 'paused';
+        fill.style.animationDirection = 'reverse'
+    });
+
 
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 45) {
+    //         $('.navbar').addClass('sticky-top shadow-sm');
+    //     } else {
+    //         $('.navbar').removeClass('sticky-top shadow-sm');
+    //     }
+    // });
 
 
     // testimonial carousel
@@ -34,27 +52,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="fa fa-angle-right"></i>',
             '<i class="fa fa-angle-left"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:1
+            768: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:2
+            1200: {
+                items: 2
             }
         }
     });
@@ -67,16 +85,16 @@
     });
 
 
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
