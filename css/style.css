@@ -1,48 +1,18 @@
 :root {
 
     /* Color Theme Swatches in Hex */
-    --aconcagua-color-1:  #0e3158; 
-    --aconcagua-color-2:  #1E439B; 
-    --aconcagua-color-3:  #6588D9; 
-    --aconcagua-color-4:  #95B3D5; 
-    --aconcagua-color-5:  #1A373D; 
-    --aconcagua-color-6:  #467B75; 
-    --aconcagua-color-7:  #9fc7c2;
-    --aconcagua-color-8:  #79534A; 
-    --aconcagua-color-9:  #BA948B; 
-    --aconcagua-color-10:  #F1F3F2; 
-
-    /* Color Theme Swatches in RGBA */
-    /* .Aconcagua-Custom-1-1-rgba { color: rgba(6, 33, 63, 1); }
-    .Aconcagua-Custom-1-2-rgba { color: rgba(30, 67, 155, 1); }
-    .Aconcagua-Custom-1-3-rgba { color: rgba(101, 136, 217, 1); }
-    .Aconcagua-Custom-1-4-rgba { color: rgba(149, 179, 213, 1); }
-    .Aconcagua-Custom-1-5-rgba { color: rgba(26, 55, 61, 1); }
-    .Aconcagua-Custom-1-6-rgba { color: rgba(70, 123, 117, 1); }
-    .Aconcagua-Custom-1-7-rgba { color: rgba(126, 150, 154, 1); }
-    .Aconcagua-Custom-1-8-rgba { color: rgba(121, 83, 74, 1); }
-    .Aconcagua-Custom-1-9-rgba { color: rgba(186, 148, 139, 1); }
-    .Aconcagua-Custom-1-10-rgba { color: rgba(241, 243, 242, 1); } */
-
-    /* Color Theme Swatches in HSLA */
-    /* .Aconcagua-Custom-1-1-hsla { color: hsla(211, 82, 13, 1); }
-    .Aconcagua-Custom-1-2-hsla { color: hsla(222, 67, 36, 1); }
-    .Aconcagua-Custom-1-3-hsla { color: hsla(221, 60, 62, 1); }
-    .Aconcagua-Custom-1-4-hsla { color: hsla(211, 43, 70, 1); }
-    .Aconcagua-Custom-1-5-hsla { color: hsla(190, 40, 17, 1); }
-    .Aconcagua-Custom-1-6-hsla { color: hsla(173, 27, 37, 1); }
-    .Aconcagua-Custom-1-7-hsla { color: hsla(188, 12, 54, 1); }
-    .Aconcagua-Custom-1-8-hsla { color: hsla(11, 24, 38, 1); }
-    .Aconcagua-Custom-1-9-hsla { color: hsla(11, 25, 63, 1); }
-    .Aconcagua-Custom-1-10-hsla { color: hsla(150, 7, 94, 1); } */
+    --aconcagua-color-1:  #0E2F59;
+    --aconcagua-color-2:  #309bee;
+    --aconcagua-color-3:  #309bee;
+    --aconcagua-color-4:  #3C4E2B;
+    --aconcagua-color-5:  #97C36B;
+    --aconcagua-color-6:  #AEE07B; 
+    --aconcagua-color-7:  #4E3025;
+    --aconcagua-color-8:  #b3715a;
+    --aconcagua-color-9:  #D9C2A7; 
+    --aconcagua-color-10:  #404040; 
+    --aconcagua-color-11:  #F1F3F2; 
     
-    /* color-1(#EA9010)
-     * color-2(#343D35)
-     * color-3(#FEF5E4)
-     */
-     /* --color-1: hsla(35, 87%, 49%, 1);
-     --color-2: rgb(52, 61, 53);
-     --color-3: hsla(39, 93%, 95%, 1); */
     --color-1: #16a9ff;
     --color-2: #111c3d;
     --color-3: hsla(39, 93%, 95%, 1);
@@ -123,11 +93,11 @@
      */
     --color-btn: var(--aconcagua-color-4);
     --color-btn-text: var(--color-text);
-    --color-btn-hover: var(--aconcagua-color-10);
+    --color-btn-hover: var(--aconcagua-color-9);
     --color-btn-hover-text: var(--color-text);
-    --color-btn-primary: var(--aconcagua-color-6);
+    --color-btn-primary: var(--aconcagua-color-5);
     --color-btn-primary-text: var(--color-2-dark);
-    --color-btn-primary-hover: var(--aconcagua-color-5);
+    --color-btn-primary-hover: var(--aconcagua-color-6);
     --color-btn-primary-hover-text: var(--color-2-dark);
     --color-btn-stroke: var(--color-text-dark);
     --color-btn-stroke-text: var(--color-text-dark);
@@ -237,13 +207,13 @@
 
 .btn.btn-secondary {
     color: var(--color-btn-text) !important;
-    background: var(--aconcagua-color-10);
+    background: var(--aconcagua-color-9);
     border: 1px solid var(--aconcagua-color-10);
 }
 
 .btn.btn-secondary:hover {
     color: var(--color-btn-hover-text);
-    background: var(--aconcagua-color-7);
+    background: var(--aconcagua-color-11);
 }
 
 /*** Topbar Start ***/
@@ -622,7 +592,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--aconcagua-color-6);
+    background: var(--aconcagua-color-5);
 }
 
 /* .feature .feature-item .feature-icon:hover {
@@ -645,7 +615,7 @@
 }
 
 .feature .feature-item:hover a.btn:hover {
-    color: var(--aconcagua-color-3) !important;
+    color: var(--aconcagua-color-1) !important;
 }
 
 /*** Features End ***/
@@ -666,7 +636,7 @@
     top: -30px;
     right: 0;
     border-radius: 10px;
-    background: var(--aconcagua-color-3);
+    background: var(--aconcagua-color-1);
 
 }
 
@@ -678,7 +648,7 @@
     left: -30px;
     bottom: 30px;
     border-radius: 10px;
-    background: var(--aconcagua-color-3);
+    background: var(--aconcagua-color-1);
 }
 
 .about .about-img .about-exp {
@@ -688,9 +658,9 @@
     padding: 25px;
     font-size: 30px;
     font-weight: bold;
-    background: var(--aconcagua-color-3);
+    background: var(--aconcagua-color-1);
     color: var(--bs-white);
-    border: 1px solid var(--aconcagua-color-3);
+    border: 1px solid var(--aconcagua-color-1);
     margin-top: -30px;
     margin-left: -30px;
     border-radius: 10px;
@@ -812,7 +782,7 @@
 /*** Blog Start ***/
 .blog .blog-item {
     border-radius: 10px;
-    background: var(--aconcagua-color-10);
+    background: var(--aconcagua-color-11);
     transition: 0.5s;
 }
 
@@ -932,7 +902,7 @@
     border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
     display: inline-flex;
-    background: var(--aconcagua-color-6);
+    background: var(--aconcagua-color-8);
     transition: 0.5s;
     z-index: 4;
 }
@@ -1092,11 +1062,11 @@
 
 .green{
     margin-top: 0px;
-    color: var(--aconcagua-color-6);
+    color: var(--aconcagua-color-5);
 }
 
 .blue {
-    color: var(--aconcagua-color-3);
+    color: var(--aconcagua-color-1);
 }
 
 

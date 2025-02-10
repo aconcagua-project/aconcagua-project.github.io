@@ -34,17 +34,18 @@
      * color-3(#FEF5E4)
      */
 
-        /* Color Theme Swatches in Hex */
-        --aconcagua-color-1:  #0e3158; 
-        --aconcagua-color-2:  #112658; 
-        --aconcagua-color-3:  #6588D9; 
-        --aconcagua-color-4:  #95B3D5; 
-        --aconcagua-color-5:  #1A373D; 
-        --aconcagua-color-6:  #467B75; 
-        --aconcagua-color-7:  #7E969A; 
-        --aconcagua-color-8:  #79534A; 
-        --aconcagua-color-9:  #BA948B; 
-        --aconcagua-color-10:  #F1F3F2; 
+    /* Color Theme Swatches in Hex */
+    --aconcagua-color-1:  #0E2F59;
+    --aconcagua-color-2:  #309bee;
+    --aconcagua-color-3:  #309bee;
+    --aconcagua-color-4:  #3C4E2B;
+    --aconcagua-color-5:  #97C36B;
+    --aconcagua-color-6:  #AEE07B; 
+    --aconcagua-color-7:  #4E3025;
+    --aconcagua-color-8:  #b3715a;
+    --aconcagua-color-9:  #D9C2A7; 
+    --aconcagua-color-10:  #404040; 
+    --aconcagua-color-11:  #F1F3F2; 
 
     
     /* --color-1: hsla(35, 87%, 49%, 1); */
@@ -205,7 +206,7 @@ h1,
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--aconcagua-color-6)
+    color: var(--aconcagua-color-3)
 }
 
 
@@ -360,7 +361,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-1-lighter)
+    color: var(--aconcagua-color-9)
 }
 
 a:not([href]):not([class]),
@@ -8406,7 +8407,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: var(--aconcagua-color-4) !important
+    color: var(--aconcagua-color-1) !important
 }
 
 .text-secondary {
@@ -8438,7 +8439,7 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: var(--aconcagua-color-10) !important
+    color: var(--aconcagua-color-11) !important
 }
 
 .text-body {
@@ -8462,7 +8463,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: var(--aconcagua-color-4) !important
+    background-color: var(--aconcagua-color-8) !important
 }
 
 .bg-secondary {
@@ -8486,7 +8487,7 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: var(--aconcagua-color-1) !important
+    background-color: var(--aconcagua-color-5) !important
 }
 
 .bg-dark {
