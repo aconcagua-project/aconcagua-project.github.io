@@ -2,10 +2,10 @@
 
     /* Color Theme Swatches in Hex */
     --aconcagua-color-1:  #0E2F59;
-    --aconcagua-color-2:  #309bee;
-    --aconcagua-color-3:  #309bee;
+    --aconcagua-color-2:  rgb(45, 145, 221);
+    --aconcagua-color-3:  rgb(28, 116, 185);
     --aconcagua-color-4:  #3C4E2B;
-    --aconcagua-color-5:  #97C36B;
+    --aconcagua-color-5:  rgb(151, 195, 107);
     --aconcagua-color-6:  #AEE07B; 
     --aconcagua-color-7:  #4E3025;
     --aconcagua-color-8:  #b3715a;
@@ -97,7 +97,7 @@
     --color-btn-hover-text: var(--color-text);
     --color-btn-primary: var(--aconcagua-color-5);
     --color-btn-primary-text: var(--color-2-dark);
-    --color-btn-primary-hover: var(--aconcagua-color-6);
+    --color-btn-primary-hover: var(--aconcagua-color-5);
     --color-btn-primary-hover-text: var(--color-2-dark);
     --color-btn-stroke: var(--color-text-dark);
     --color-btn-stroke-text: var(--color-text-dark);
@@ -196,8 +196,11 @@
 
 .btn.btn-primary {
     color: var(--color-white);
-    background: var(--color-btn-primary);
-    border: 1px solid var(--color-btn-primary);
+    /* background: var(--color-btn-primary); */
+    background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) 50%, rgb(151, 195, 107) 90%);
+    background-size: 300% 300%; 
+    animation: gradient 15s ease infinite;
+    border: none;
 }
 
 .btn.btn-primary:hover {
@@ -206,14 +209,14 @@
 }
 
 .btn.btn-secondary {
-    color: var(--color-btn-text) !important;
-    background: var(--aconcagua-color-9);
-    border: 1px solid var(--aconcagua-color-10);
+    color: var(--color-white) !important;
+    background: var(--aconcagua-color-3);
+    border: none;
 }
 
 .btn.btn-secondary:hover {
-    color: var(--color-btn-hover-text);
-    background: var(--aconcagua-color-11);
+    color: var(--color-white);
+    background: var(--aconcagua-color-2);
 }
 
 /*** Topbar Start ***/
@@ -636,7 +639,7 @@
     top: -30px;
     right: 0;
     border-radius: 10px;
-    background: var(--aconcagua-color-1);
+    background: var(--aconcagua-color-3);
 
 }
 
@@ -648,7 +651,7 @@
     left: -30px;
     bottom: 30px;
     border-radius: 10px;
-    background: var(--aconcagua-color-1);
+    background: var(--aconcagua-color-3);
 }
 
 .about .about-img .about-exp {
@@ -658,9 +661,9 @@
     padding: 25px;
     font-size: 30px;
     font-weight: bold;
-    background: var(--aconcagua-color-1);
+    background: var(--aconcagua-color-3);
     color: var(--bs-white);
-    border: 1px solid var(--aconcagua-color-1);
+    border: 1px solid var(--aconcagua-color-3);
     margin-top: -30px;
     margin-left: -30px;
     border-radius: 10px;
@@ -902,7 +905,7 @@
     border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
     display: inline-flex;
-    background: var(--aconcagua-color-8);
+    background: var(--aconcagua-color-3);
     transition: 0.5s;
     z-index: 4;
 }
@@ -1066,75 +1069,29 @@
 }
 
 .blue {
-    color: var(--aconcagua-color-1);
+    color: var(--aconcagua-color-3);
 }
 
-
-#water_circle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    background: var(--aconcagua-color-4);
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
+.bg-gradient-blue {
+    background: linear-gradient(318deg, rgb(28 116 185) 0%, rgb(28 116 185) 50%, rgb(151 195 107) 90%);
+    background-size: 300% 200%;
+    /* animation: gradient 20s ease infinite; */
 }
 
-#water_circle .fill {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.bg-gradient-green {
+    background: linear-gradient(318deg, rgb(151 195 107) 0%, rgb(151 195 107) 50%, rgb(28 116 185) 90%);
+    background-size: 300% 200%;
+    /* animation: gradient 30s ease infinite; */
 }
 
-#water_circle .rounded-circle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#water_circle .rounded-circle i {
-    color: white;
-}
-
-#water_circle .fill {
-    animation-name: fillAction;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; /* Default is paused */
-    transform: translate(0, 80px); /* Initial position */
-}
-
-#water_circle #waveShape {
-    animation-name: waveAction;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-play-state: paused; /* Default is paused */
-    transform: translate(-150px, 0); /* Initial position */
-    fill: var(--aconcagua-color-3)
-}
-
-@keyframes fillAction {
+@keyframes gradient {
     0% {
-        transform: translate(0, 80px);
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
     }
     100% {
-        transform: translate(0, 10px);
-    }
-}
-@keyframes waveAction {
-    0% {
-        transform: translate(-150px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
+        background-position: 0% 50%;
     }
 }

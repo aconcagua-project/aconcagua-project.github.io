@@ -36,8 +36,8 @@
 
     /* Color Theme Swatches in Hex */
     --aconcagua-color-1:  #0E2F59;
-    --aconcagua-color-2:  #309bee;
-    --aconcagua-color-3:  #309bee;
+    --aconcagua-color-2:  #1c74b9;
+    --aconcagua-color-3:  #1c74b9;
     --aconcagua-color-4:  #3C4E2B;
     --aconcagua-color-5:  #97C36B;
     --aconcagua-color-6:  #AEE07B; 
@@ -8407,11 +8407,11 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: var(--aconcagua-color-1) !important
+    color: var(--aconcagua-color-2) !important
 }
 
 .text-secondary {
-    color: var(--aconcagua-color-1) !important
+    color: var(--aconcagua-color-2) !important
 }
 
 .text-success {
@@ -8463,11 +8463,11 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: var(--aconcagua-color-8) !important
+    background-color: var(--aconcagua-color-3) !important
 }
 
 .bg-secondary {
-    background-color: #19409a !important
+    background-color: var(--aconcagua-color-5)  !important
 }
 
 .bg-success {
