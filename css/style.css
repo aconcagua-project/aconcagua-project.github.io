@@ -1,25 +1,25 @@
 :root {
 
     /* Color Theme Swatches in Hex */
-    --aconcagua-color-1:  #0E2F59;
-    --aconcagua-color-2:  #2d91dd;
-    --aconcagua-color-3:  rgb(28, 116, 185);
-    --aconcagua-color-4:  #3C4E2B;
-    --aconcagua-color-5:  #97c36b;
-    --aconcagua-color-6:  #AEE07B; 
-    --aconcagua-color-7:  #4E3025;
-    --aconcagua-color-8:  #b3715a;
-    --aconcagua-color-9:  #D9C2A7; 
-    --aconcagua-color-10:  #404040; 
-    --aconcagua-color-11:  #F1F3F2; 
-    
+    --aconcagua-color-1: #0E2F59;
+    --aconcagua-color-2: #2d91dd;
+    --aconcagua-color-3: rgb(28, 116, 185);
+    --aconcagua-color-4: #3C4E2B;
+    --aconcagua-color-5: #97c36b;
+    --aconcagua-color-6: #AEE07B;
+    --aconcagua-color-7: #4E3025;
+    --aconcagua-color-8: #b3715a;
+    --aconcagua-color-9: #D9C2A7;
+    --aconcagua-color-10: #404040;
+    --aconcagua-color-11: #F1F3F2;
+
     --color-1: #16a9ff;
     --color-2: #111c3d;
     --color-3: hsla(39, 93%, 95%, 1);
 
     /* theme color variations
      */
-     --color-1-lightest: #8dd2fa;
+    --color-1-lightest: #8dd2fa;
     --color-1-lighter: #68c0f3;
     --color-1-light: #40b9ff;
     --color-1-dark: #00cd67;
@@ -198,14 +198,18 @@
     color: var(--color-white);
     /* background: var(--color-btn-primary); */
     background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) 50%, rgb(151, 195, 107) 90%);
-    background-size: 300% 300%; 
+    background-size: 300% 300%;
     animation: gradient 10s ease infinite;
     border: none;
 }
 
 .btn.btn-primary:hover {
-    background: var(--color-btn-primary-hover);
+    /* Keep the animated gradient on hover for smooth transition */
+    background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) 50%, rgb(151, 195, 107) 90%);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
     border: none;
+    filter: brightness(1.2);
 }
 
 .btn.btn-secondary {
@@ -259,19 +263,42 @@
     font-weight: 600;
     vertical-align: middle;
     margin-left: 8px;
+    color: var(--aconcagua-color-3);
 }
 
-.dropdown .dropdown-menu a:hover {
-    background: var(--aconcagua-color-3);
+.dropdown .dropdown-menu {
+    background: var(--aconcagua-color-11);
+    border-radius: 10px;
+    border: 1px solid var(--aconcagua-color-9);
+    box-shadow: 0 4px 24px rgba(14, 47, 89, 0.08);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    transition: 0.3s;
+}
+
+.dropdown .dropdown-menu a {
+    color: var(--aconcagua-color-1);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+.dropdown .dropdown-menu a:hover,
+.dropdown .dropdown-menu a:focus {
+    background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(151, 195, 107) 90%);
     color: var(--bs-white);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--aconcagua-color-10);
+    background: var(--aconcagua-color-11);
     transition: .5s;
     opacity: 1;
+    display: block;
 }
 
 @media (max-width: 991.98px) {
@@ -710,7 +737,7 @@
     color: var(--bs-white);
 }
 
-.service-item:hover .service-content p, 
+.service-item:hover .service-content p,
 .service-item:hover .service-content a {
     color: var(--bs-white);
 }
@@ -1033,7 +1060,7 @@
 
 .footer .footer-item a:hover {
     letter-spacing: 0.5px;
-    color: var(--aconcagua-color-3);
+    color: var(--color-white);
 }
 
 .footer .footer-item .footer-btn a,
@@ -1063,7 +1090,7 @@
     font-weight: 700;
 }
 
-.green{
+.green {
     margin-top: 0px;
     color: var(--aconcagua-color-5);
 }
@@ -1088,9 +1115,11 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -1362,7 +1391,7 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    background-color: var(--aconcagua-color-1);
+    background-color: var(--aconcagua-color-3);
     color: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -1475,4 +1504,109 @@
 
 .testimonial-img img .animated.pulse {
     animation-duration: 2s;
+}
+
+
+.icon-box-item .icon-box-icon {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 90%);
+    background-size: 100% 100%;
+}
+
+.icon-box-item {
+    position: relative;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.icon-white {
+    color: white;
+}
+
+.icon-large {
+    font-size: 7rem;
+}
+
+.icon-xlarge {
+    font-size: 10rem;
+}
+
+.icon-primary {
+    color: var(--primary);
+}
+
+.icon-medium {
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.bg-farmers {
+    background: #ffc824;
+}
+
+.bg-farmers-gradient {
+    background: linear-gradient(318deg, var(--aconcagua-color-2) -22%, rgb(151 195 107) 26%, rgb(255 200 36) 74%);
+}
+
+.bg-supply_chain {
+    background: var(--aconcagua-color-1);
+}
+
+.bg-supply_chain-gradient {
+    background: linear-gradient(318deg, var(--aconcagua-color-2) -65%, rgb(151 195 107) -40%, var(--aconcagua-color-1) 72%);
+}
+
+.bg-environment {
+    background: rgb(151, 195, 107);
+}
+
+.bg-environment-gradient {
+    background: linear-gradient(318deg, var(--aconcagua-color-2) -22%, rgb(151 195 107) 51%, rgb(151, 195, 107) 98%);
+}
+
+.chevron-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.chevron {
+    position: relative;
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 125%);
+    color: white;
+    padding: 60px 30px 40px 30px;
+    width: 100%;
+    text-align: center;
+    /* Chevron shape clipped at both top and bottom, top indent flipped upside-down */
+    clip-path: polygon(0 0,
+            /* left top */
+            50% 20%,
+            /* top center indent (downwards) */
+            100% 0,
+            /* right top */
+            100% 80%,
+            /* right bottom indent */
+            50% 100%,
+            /* bottom center point */
+            0 80%
+            /* left bottom indent */
+        );
+}
+
+.chevron::after {
+    display: none;
+    /* Remove the old arrow, not needed for downward chevron */
+}
+
+.chevron:not(:last-child) {
+    margin-bottom: -30px;
+    /* Overlap the chevrons for a connected look */
+}
+
+.stakheholder-item {
+    margin-right: 2rem;
 }
