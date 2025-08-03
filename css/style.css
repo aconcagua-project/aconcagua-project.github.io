@@ -125,6 +125,13 @@
     color: var(--aconcagua-color-10);
 }
 
+.bg-primary-light {
+    background-color: #e2f1fd;
+}
+
+.bg-primary-gradient {
+   background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 175%);
+}
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -1100,13 +1107,13 @@
 }
 
 .bg-gradient-blue {
-    background: linear-gradient(318deg, rgb(28 116 185) 0%, rgb(28 116 185) 50%, rgb(151 195 107) 90%);
+    background: linear-gradient(318deg, #1c74b9 0%, rgb(28 116 185) 50%, #97c36b 90%);
     background-size: 300% 200%;
     /* animation: gradient 20s ease infinite; */
 }
 
 .bg-gradient-green {
-    background: linear-gradient(318deg, rgb(151 195 107) 0%, rgb(151 195 107) 50%, rgb(28 116 185) 90%);
+    background: linear-gradient(318deg,  #1c74b9 0%, rgb(28 116 185) 50%, #97c36b 175%);
     background-size: 300% 200%;
     /* animation: gradient 30s ease infinite; */
 }
@@ -1513,7 +1520,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 90%);
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 175%);
     background-size: 100% 100%;
 }
 
@@ -1576,7 +1583,7 @@
 
 .chevron {
     position: relative;
-    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 125%);
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 167%);
     color: white;
     padding: 60px 30px 40px 30px;
     width: 100%;
@@ -1609,4 +1616,47 @@
 
 .stakheholder-item {
     margin-right: 2rem;
+}
+
+.stakheholder-icon {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 175%);
+    background-size: 100% 100%;
+}
+
+#banner-container {
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.photobanner {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: bannermove 25s linear infinite;
+}
+
+.photobanner img {
+    margin: 0 3em;
+    max-width: 250px;
+    max-height: 100px;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
