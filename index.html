@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEC8B79ELN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VEC8B79ELN');
+    </script>
+
     <meta charset="utf-8">
     <title>WAVE Partnership: Collective Action for Water &amp; Biodiversity</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="keywords"
+        content="WAVE, Partnership, Water, Biodiversity, Collective Action, Agriculture, Supply Chain Management, Ecosystems, Sustainable Farming, Aconcagua Valley, Chile, Water Management, Biodiversity Conservation">
+    <meta name="description"
+        content="WAVE Partnership is dedicated to scaling collective action for water and biodiversity management in agriculture, focusing on agri-food supply chains.">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +41,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/apple-touch-icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -47,8 +60,7 @@
     <div class="container-fluid position-relative p-0">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top">
-            <a href="" class="navbar-brand p-0">
-                <!-- <h1 class="blue bold"> <i class="fas fa-hand-holding-water me-3"></i>WAVE Partnership</h1> -->
+            <a href="index.html" class="navbar-brand p-0">
                 <img src="img/wave-logo-colourblock-clear.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -63,16 +75,18 @@
                             Info</a>
                         <div class="dropdown-menu m-0">
                             <a href="mission.html" class="dropdown-item">Timeline</a>
-                            <a href="governance.html" class="dropdown-item">Goverance</a>
+                            <a href="governance.html" class="dropdown-item">Governance</a>
                             <a href="community.html" class="dropdown-item">Community</a>
                         </div>
                     </div>
                     <a href="aconcagua.html" class="nav-item nav-link">Aconcagua</a>
                     <a href="news.html" class="nav-item nav-link">News</a>
                     <a href="resources.html" class="nav-item nav-link">Resources</a>
+                    <a href="get-involved.html" class="nav-item nav-link d-lg-none">Get Involved</a>
                 </div>
                 <a href="get-involved.html"
-                    class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Get Involved</a>
+                    class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4 d-none d-lg-inline-flex">Get
+                    Involved</a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -88,9 +102,6 @@
                         <img src="img/theme/water_hands_large_flipped_4.jpg" class="img-fluid w-100" alt="Image">
                         <div class="carousel-caption-2">
                             <div class="carousel-caption-2-content">
-                                <!-- <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated"
-                                    data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;"
-                                    style="letter-spacing: 3px;">Lorem Ipsum</h4> -->
                                 <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated"
                                     data-animation="fadeInRight" data-delay="0.5s" style="animation-delay: 0.5s;">
                                     WAVE Partnership: <br> Collective Action for Water &amp; Biodiversity</h1>
@@ -100,9 +111,11 @@
                                 </p>
                                 <div class="carousel-caption-2-content-btn fadeInRight animated"
                                     data-animation="fadeInRight" data-delay="1.1s" style="animation-delay: 1.1s;">
-                                    <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Learn
+                                    <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2"
+                                        href="#about">Learn
                                         more</a>
-                                    <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">Get
+                                    <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2"
+                                        href="get-involved.html">Get
                                         involved</a>
                                 </div>
                             </div>
@@ -116,7 +129,7 @@
     <!-- Navbar & Hero End -->
 
     <!-- About WAVE Start -->
-    <div class="container-fluid about overflow-hidden py-5">
+    <div class="container-fluid about overflow-hidden py-5" id="about">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp">
@@ -127,7 +140,6 @@
                             style="width: 200px; height: 200px">
                             <div
                                 class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
-                                <!-- <i class="fa-regular fa-wave icon-white icon-large"></i> -->
                                 <img src="img/wave-icon-white.png" alt="WAVE Partnership Logo"
                                     style="width: 100%; height: 100%; object-fit: contain;" />
                             </div>
@@ -195,9 +207,10 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="pe-4">
-                                            <div class="rounded-circle bg-farmers d-flex align-items-center justify-content-center"
-                                                style="width: 100px; height: 100px;"><i
-                                                    class="fa-regular fa-farm text-white icon-medium"></i></div>
+                                            <div
+                                                class="rounded-circle d-flex align-items-center justify-content-center badge farmers">
+                                                <i class="fa-regular fa-farm icon-medium" style="color: #ffc824;"></i>
+                                            </div>
                                         </div>
                                         <div class="">
                                             <h4 class="d-inline-block text-white mb-3">More sustainable farming
@@ -215,9 +228,10 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="pe-4">
-                                            <div class="rounded-circle bg-supply_chain d-flex align-items-center justify-content-center"
-                                                style="width: 100px; height: 100px;"><i
-                                                    class="fa-regular fa-truck-ramp-box text-white icon-medium"></i>
+                                            <div
+                                                class="rounded-circle d-flex align-items-center justify-content-center badge suppliers">
+                                                <i class="fa-regular fa-truck-ramp-box icon-medium"
+                                                    style="color: #0E2F59;"></i>
                                             </div>
                                         </div>
                                         <div class="">
@@ -237,12 +251,15 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="pe-4">
-                                            <div class="rounded-circle bg-environment d-flex align-items-center justify-content-center"
-                                                style="width: 100px; height: 100px;"><i
-                                                    class="fa-regular fa-seedling text-white icon-medium"></i></div>
+                                            <div
+                                                class="rounded-circle d-flex align-items-center justify-content-center badge environment">
+                                                <i class="fa-regular fa-seedling icon-medium"
+                                                    style="color: #97c36b;"></i>
+                                            </div>
                                         </div>
                                         <div class="">
-                                            <h4 class="d-inline-block text-white mb-3">Stronger enabling environment</h4>
+                                            <h4 class="d-inline-block text-white mb-3">Stronger enabling environment
+                                            </h4>
                                             <p class="mb-0 text-white">
                                                 work with <b>governments and civil society actors</b> to create a
                                                 stronger enabling environment that facilitates enhanced water
@@ -253,8 +270,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
-                        <a href="#" class="btn btn-secondary rounded-pill py-3 px-5">Read More</a> -->
                     </div>
                 </div>
             </div>
@@ -408,7 +423,6 @@
     <div class="container-fluid service overflow-hidden py-5">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 1000px;">
-                <!-- <h4 class="text-uppercase text-primary">Lorem ipsum dolor sit amet</h4> -->
                 <h1 class="display-6 mb-5">WAVE’s standardized approach is scalable to multiple regions and supply
                     chains.</h1>
                 <p class="fs-5 text-primary mb-4">
@@ -458,18 +472,6 @@
         </div>
     </div>
     <!-- Process End -->
-
-    <!-- CTA Start -->
-    <!-- <div class="container-fluid counter py-5 mb-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-12 wow fadeInUp text-center" data-wow-delay="0.2s">
-                    <h1 class="text-white">Call to Action</h1>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- CTA End -->
 
     <!-- Stakeholders Start -->
     <div class="container-xxl py-5 wow fadeInUp mb-5">
@@ -683,8 +685,10 @@
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="footer-item d-flex flex-column">
                         <div class="footer-item">
-                            <img src="img/wave-logo-white.png" alt="WAVE Partnership Logo" style="max-width: 180px; margin-bottom: 16px;">
-                            <p class="mb-3 text-white">Collective Action for Water &amp; Biodiversity</p>
+                            <img src="img/wave-logo-white.png" alt="WAVE Partnership Logo"
+                                style="max-width: 60%; margin-bottom: 16px;">
+                            <p class="mb-3 text-white"><b>Collective Action for Water &amp; Biodiversity</b></p>
+                            <p class="mb-3 text-white">Driving collective action to create catchments in balance</p>
                         </div>
                         <div class="d-flex">
                             <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i
@@ -696,24 +700,19 @@
                             <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i
                                     class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <!-- <div class="position-relative">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
-                            <button type="button"
-                                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="text-white mb-4">Quick Links</h4>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Project Timeline</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Project Governance</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Community</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> News</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Resources</a>
-                        <a href="#"><i class="fas fa-angle-right me-2"></i> Get Involved</a>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="mission"><i class="fas fa-angle-right me-2"></i> Project Timeline</a>
+                        <a href="governance.html"><i class="fas fa-angle-right me-2"></i> Project Governance</a>
+                        <a href="community.html"><i class="fas fa-angle-right me-2"></i> Community</a>
+                        <a href="aconcagua.html"><i class="fas fa-angle-right me-2"></i> Aconcagua</a>
+                        <a href="news.html"><i class="fas fa-angle-right me-2"></i> News</a>
+                        <a href="resources.html"><i class="fas fa-angle-right me-2"></i> Resources</a>
+                        <a href="get-involved.html"><i class="fas fa-angle-right me-2"></i> Get Involved</a>
                         <a href="cookie-policy.html"><i class="fas fa-angle-right me-2"></i> Cookie Policy</a>
                     </div>
                 </div>
@@ -777,19 +776,13 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4 bg-primary">
         <div class="container">
             <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>2025 NewForesight</a>, all rights
-                        reserved.</span>
+                <div class="col-md-6 text-center text-md-start mb-md-0 text-white">
+                    <span><i class="fas fa-copyright text-light me-2"></i><a href="#"
+                            class="border-bottom text-white">2025 NewForesight</a>, all rights reserved.</span>
                 </div>
-                <div class="col-md-6 text-center text-md-end text-body">
+                <div class="col-md-6 text-center text-md-end text-white">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
@@ -800,7 +793,7 @@
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>

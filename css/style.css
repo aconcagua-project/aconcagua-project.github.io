@@ -130,7 +130,7 @@
 }
 
 .bg-primary-gradient {
-   background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 175%);
+    background: linear-gradient(120deg, rgb(28, 116, 185) 0%, rgb(28, 116, 185) -7%, rgb(151, 195, 107) 175%);
 }
 
 /*** Spinner Start ***/
@@ -263,52 +263,27 @@
     max-height: 45px;
 }
 
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    vertical-align: middle;
-    margin-left: 8px;
-    color: var(--aconcagua-color-3);
-}
-
-.dropdown .dropdown-menu {
-    background: var(--aconcagua-color-11);
-    border-radius: 10px;
-    border: 1px solid var(--aconcagua-color-9);
-    box-shadow: 0 4px 24px rgba(14, 47, 89, 0.08);
-    padding: 0.5rem 0;
-    min-width: 200px;
-    transition: 0.3s;
-}
-
-.dropdown .dropdown-menu a {
-    color: var(--aconcagua-color-1);
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    background: transparent;
-    transition: background 0.3s, color 0.3s;
-    border-radius: 6px;
-}
-
-.dropdown .dropdown-menu a:hover,
-.dropdown .dropdown-menu a:focus {
-    background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(151, 195, 107) 90%);
-    color: var(--bs-white);
-}
-
-.navbar .nav-item:hover .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    background: var(--aconcagua-color-11);
-    transition: .5s;
-    opacity: 1;
-    display: block;
-}
-
+/* Always show dropdown items in mobile menu */
 @media (max-width: 991.98px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: static !important;
+        transform: none !important;
+        box-shadow: none;
+        border: none;
+        min-width: 100%;
+    }
+
+    .dropdown-item {
+        padding: 10px 20px;
+        color: var(--aconcagua-color-1);
+        background: transparent;
+        transition: background 0.3s, color 0.3s;
+        border-radius: 6px;
+    }
+
     .sticky-top.navbar-light {
         position: relative;
         background: var(--bs-white);
@@ -338,6 +313,51 @@
 }
 
 @media (min-width: 992px) {
+    .navbar .dropdown-toggle::after {
+        border: none;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        vertical-align: middle;
+        margin-left: 8px;
+        color: var(--aconcagua-color-3);
+    }
+
+    .dropdown .dropdown-menu {
+        background: var(--aconcagua-color-11);
+        border-radius: 10px;
+        border: 1px solid var(--aconcagua-color-9);
+        box-shadow: 0 4px 24px rgba(14, 47, 89, 0.08);
+        padding: 0.5rem 0;
+        min-width: 200px;
+        transition: 0.3s;
+    }
+
+    .dropdown .dropdown-menu a {
+        color: var(--aconcagua-color-1);
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        background: transparent;
+        transition: background 0.3s, color 0.3s;
+        border-radius: 6px;
+    }
+
+    .dropdown .dropdown-menu a:hover,
+    .dropdown .dropdown-menu a:focus {
+        background: linear-gradient(90deg, rgb(28, 116, 185) 0%, rgb(151, 195, 107) 175%);
+        color: var(--bs-white);
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        background: var(--aconcagua-color-11);
+        transition: .5s;
+        opacity: 1;
+        display: block;
+    }
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -364,7 +384,7 @@
 
     .sticky-top.navbar-light {
         position: fixed;
-        background: rgba(256, 256, 256, 0.92);
+        background: rgba(256, 256, 256, 0.88);
         backdrop-filter: blur(3px);
         border: none;
         box-shadow: 0px 0px 13px #00000054;
@@ -1061,10 +1081,6 @@
     transition: 0.5s;
 }
 
-.footer .footer-item p {
-    line-height: 35px;
-}
-
 .footer .footer-item a:hover {
     letter-spacing: 0.5px;
     color: var(--color-white);
@@ -1113,7 +1129,7 @@
 }
 
 .bg-gradient-green {
-    background: linear-gradient(318deg,  #1c74b9 0%, rgb(28 116 185) 50%, #97c36b 175%);
+    background: linear-gradient(318deg, #1c74b9 0%, rgb(28 116 185) 50%, #97c36b 175%);
     background-size: 300% 200%;
     /* animation: gradient 30s ease infinite; */
 }
@@ -1425,7 +1441,7 @@
 }
 
 .cookie-button {
-    background-color: var(--primary);
+    background-color: var(--aconcagua-color-1);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -1435,7 +1451,7 @@
 }
 
 .cookie-button:hover {
-    background-color: var(--secondary);
+    background-color: var(--aconcagua-color-5);
 }
 
 .bottom-gradient {
@@ -1542,11 +1558,11 @@
 }
 
 .icon-primary {
-    color: var(--primary);
+    color: var(--aconcagua-color-2);
 }
 
 .icon-medium {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -1659,4 +1675,23 @@
     100% {
         transform: translate(-50%, 0);
     }
+}
+
+.badge {
+    width: 110px; 
+    height: 110px; 
+    border: 7px solid;
+    background-color: white;
+}
+
+.farmers {
+   border-color: #ffc824;;
+}
+
+.suppliers {
+   border-color: var(--aconcagua-color-1);
+}
+
+.environment {
+   border-color: #97c36b;
 }
